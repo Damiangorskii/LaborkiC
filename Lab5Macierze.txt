@@ -1,0 +1,70 @@
+Zadanie z macierzami
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    srand(time(NULL));
+    int i,j;
+    int x,y;
+    int k;
+    int linia1=0, linia2=0, linia3=0;
+    int tab[3][4];
+    int tab2[4][3];
+
+    printf("Macierz 1: \n");
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<4;j++)
+        {
+            tab[i][j]=rand()%10;
+            printf("%d ", tab[i][j]);
+        }
+        printf("\n");
+    }
+    printf("Macierz 2: \n");
+    for (x=0;x<4;x++)
+    {
+        for (y=0;y<3;y++)
+        {
+            tab2[x][y]=rand()%10;
+            printf("%d ", tab2[x][y]);
+        }
+        printf("\n");
+    }
+    printf("Iloczyn Macierzy: \n");
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<4;j++)
+        {
+            linia1+=tab[0][j]*tab2[j][i];
+        }
+        printf("%6d ", linia1);
+        linia1=0;
+    }
+    printf("\n");
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<4;j++)
+        {
+            linia2+=tab[1][j]*tab2[j][i];
+        }
+        printf("%6d ", linia2);
+        linia2=0;
+    }
+    printf("\n");
+    for (i=0;i<3;i++)
+    {
+        for (j=0;j<4;j++)
+        {
+            linia3+=tab[2][j]*tab2[j][i];
+        }
+        printf("%6d ", linia3);
+        linia3=0;
+    }
+    printf("\n");
+
+
+    return 0;
+}
