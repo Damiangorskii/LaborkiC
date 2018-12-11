@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1544559125 source:c:\users\lenovo\laborkic\laborkic\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
