@@ -1,0 +1,114 @@
+1. Zadanie z milionem bitow ktore powtarzaja sie wstecz o 1 o 2 o... o 10
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+int main()
+{
+    srand(time(NULL));
+    int i;
+    int licznik=0;
+    int licznik2=0;
+    int licznik3=0;
+    int licznik4=0;
+    int licznik5=0;
+    int licznik6=0;
+    int licznik7=0;
+    int licznik8=0;
+    int licznik9=0;
+    int licznik10=0;
+    int *tab = (int*)calloc(1000000, sizeof(int));
+
+
+    //Losowa tablica
+    for (i=0;i<1000000;i++)
+    {
+        tab[i]=rand()%10;
+    }
+
+
+    for (i=1;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-1])
+        {
+            licznik++;
+        }
+    }
+    printf("\nNa poprzednim wystapil %d razy", licznik);
+    for (i=2;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-2])
+        {
+            licznik2++;
+        }
+    }
+    printf("\nNa dwoch miejscach wstecz %d razy", licznik2);
+    for (i=3;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-1])
+        {
+            licznik3++;
+        }
+    }
+    printf("\nNa trzech miejscach wstecz %d razy", licznik3);
+    for (i=4;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-4])
+        {
+            licznik4++;
+        }
+    }
+    printf("\nNa czterech miejscach wstecz %d razy", licznik4);
+    for (i=5;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-5])
+        {
+            licznik5++;
+        }
+    }
+    printf("\nNa pieciu miejscach wstecz %d razy", licznik5);
+    for (i=6;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-6])
+        {
+            licznik6++;
+        }
+    }
+    printf("\nNa szesciu miejscach wstecz %d razy", licznik6);
+    for (i=7;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-7])
+        {
+            licznik7++;
+        }
+    }
+    printf("\nNa siedmiu miejscach wstecz %d razy", licznik7);
+    for (i=8;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-8])
+        {
+            licznik8++;
+        }
+    }
+    printf("\nNa osmiu miejscach wstecz %d razy", licznik8);
+    for (i=9;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-9])
+        {
+            licznik9++;
+        }
+    }
+    printf("\nNa dziewioatym miejscu wstecz %d razy", licznik9);
+    for (i=10;i<1000000;i++)
+    {
+        if (tab[i]==tab[i-10])
+        {
+            licznik10++;
+        }
+    }
+    printf("\nNa dziesiatym miejscu wstecz %d razy", licznik10);
+
+    return 0;
+}
