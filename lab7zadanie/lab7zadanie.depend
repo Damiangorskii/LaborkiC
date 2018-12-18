@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1543401527 source:c:\users\lenovo\desktop\lab7zadanie\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1543401677 source:c:\users\lenovo\desktop\wstep do programowania\lab7zadanie\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
