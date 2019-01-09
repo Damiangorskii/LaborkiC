@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1547061049 source:c:\users\lenovo\desktop\krzyzowanie\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
